@@ -1,0 +1,8 @@
+.table {
+  border: 1px solid black;
+  font-size: 18px;
+}
+.item {
+  border: 1px solid black;
+  text-align: center;
+}

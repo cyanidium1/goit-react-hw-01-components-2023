@@ -7,12 +7,13 @@ import friends from '../Data/friends.json';
 // jsx
 import Profile from './Profile/Profile';
 import Stats from './Stats/Stats';
+import Friends from './Friends/Friends';
+import Trans from './Trans/TransactionHistory';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -23,6 +24,8 @@ export const App = () => {
     >
       <Profile profile={profile} />
       <Stats stats={data} />
+      <Friends friends={friends} />
+      <Trans t={transactions} />
     </div>
   );
 };

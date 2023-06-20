@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Stats.module.css';
+import PropTypes from 'prop-types';
 
 const Stats = ({ stats }) => {
   function randomColor() {
@@ -23,6 +24,10 @@ const Stats = ({ stats }) => {
       </ul>
     </section>
   );
+};
+
+Stats.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Stats;
