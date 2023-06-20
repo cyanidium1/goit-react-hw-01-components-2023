@@ -2,7 +2,7 @@ import FrListItem from 'components/FrListItem/FrListItem';
 import React from 'react';
 import s from './Friends.module.css';
 import PropTypes from 'prop-types';
-
+//hm
 const Friends = ({ friends }) => {
   return (
     <ul className={s.list}>
