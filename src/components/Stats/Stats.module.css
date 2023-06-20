@@ -1,0 +1,21 @@
+.stats {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+/* i don't like writing 2 much css... */
