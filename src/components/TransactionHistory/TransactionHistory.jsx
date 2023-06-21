@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Trans.module.css';
+import s from './TransactionHistory.module.css';
 import PropTypes from 'prop-types';
 
 const TransactionHistory = ({ t }) => {

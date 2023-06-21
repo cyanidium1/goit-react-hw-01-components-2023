@@ -8,7 +8,7 @@ import friends from '../Data/friends.json';
 import Profile from './Profile/Profile';
 import Stats from './Stats/Stats';
 import Friends from './Friends/Friends';
-import Trans from './Trans/TransactionHistory';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
@@ -25,7 +25,7 @@ export const App = () => {
       <Profile profile={profile} />
       <Stats stats={data} />
       <Friends friends={friends} />
-      <Trans t={transactions} />
+      <TransactionHistory t={transactions} />
     </div>
   );
 };

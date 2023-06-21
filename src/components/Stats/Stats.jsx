@@ -2,16 +2,21 @@ import React from 'react';
 import s from './Stats.module.css';
 import PropTypes from 'prop-types';
 
-const Stats = ({ stats }) => {
+const Stats = stats => {
   function randomColor() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
   }
+  function Header(title) {
+    // console.log(title);
+    if (title) {
+      return <h2 className={s.header}>{title.props}</h2>;
+    }
+  }
   return (
     <section className={s.stats}>
-      <h2 className={s.title}>Upload stats</h2>
-
+      <Header props={stats.title} />
       <ul className={s.statList}>
-        {stats.map(el => (
+        {stats.stats.map(el => (
           <li
             key={el.id}
             className={s.item}

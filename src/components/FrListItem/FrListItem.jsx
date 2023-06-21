@@ -2,8 +2,7 @@ import React from 'react';
 import s from './FrListItem.module.css';
 import PropTypes from 'prop-types';
 
-const FrListItem = i => {
-  const { avatar, name, isOnline } = i.el;
+const FrListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={s.item}>
       <span className={isOnline ? s.online : s.offline}></span>

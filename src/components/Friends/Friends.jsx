@@ -7,7 +7,7 @@ const Friends = ({ friends }) => {
   return (
     <ul className={s.list}>
       {friends.map(el => (
-        <FrListItem key={el.id} el={el} />
+        <FrListItem key={el.id} {...el} />
       ))}
     </ul>
   );
